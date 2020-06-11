@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Metal+Mania&display=swap" rel="stylesheet">
+    <script src="../programming-4/JS/app.js"></script>
+    <title>Register | Student</title>
+</head>
+<body>
+
+
+
+    <div data-role ="page" id="student_register_screen" data-theme="b" >
+        <div data-role="header" data-position="fixed" data-theme="k">
+            <button type="button" onclick="deleteStudent()"  id="deletestudent" data-theme="b" data-rel="back" data-icon="delete" class="ui-btn-left">Delete</button>
+            <h1 >Add Student</h1>
+            <a href="#" data-theme="b" data-rel="back" data-icon="back" class="ui-btn-right">Cancel</a>
+
+        </div>
+
+        <div data-role="main" class="ui-content" >
+            <div data-role="fieldcontain">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="Enter First Name">
+                <div id="stidholder" style="display:none;" >
+                <input type="text" id="stu_id" style="display:none;" readonly >
+                </div>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Enter Last Name">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="rollnum">Roll  No</label>
+                <input type="text" id="rollnum" placeholder="Enter Roll Number">
+            </div>
+            <div data-role="fieldcontain" >
+                <label for="subject">Subject</label>
+                <select id="subject" >
+                    <option value="Math">Math</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Science and Technology">Science and Technology</option>
+                    <option value="Social Studies">Social Studies</option>
+                    <option value="Biology">Biology</option>
+
+                </select>
+            </div>
+
+
+            <div data-role="fieldcontain">
+                <label></label>
+                <a href="" onclick="addStudent()" data-role="button" data-icon="user" id="stdaddedit" >Add</a>
+            </div>
+          
+        </div>
+
+        <div data-role="footer" data-position="fixed"  data-theme="b">
+            <h1 style="font-size: .6rem;">Copyright <span>&#169;</span> 2020 <span  style="color:pink;font-family: 'Anton'; font-size: .7rem; letter-spacing: 3px;">-VEYS</span></h1>
+
+        </div>
+
+        <div data-role = "popup" id="deletealert">
+            <div data-role="header"  data-theme="b"  class="ui-content">
+                <h1>Sure?</h1>
+                <a href="" data-icon="delete" data-iconpos="notext"></a>
+            </div>
+            <div data-role="main" class="ui-content" data-theme="none">
+                Do you really want to delete ? 
+            </div>
+            <div data-role="footer" style="text-align: center;" >
+                <a href="" data-rel="back"  data-icon="delete" data-role="button" >Cancel</a>
+                <a href="" onclick="deleteConfirm()" data-icon="check" data-role="button" data-theme="b"  >OK</a>
+            </div>
+         </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>

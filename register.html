@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Metal+Mania&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../programming-4/JS/app.js"></script>
+    <title>Register</title>
+</head>
+<body>
+
+
+    <div data-role="page" id="register_screen" data-theme="b">
+
+        <div data-role="header" data-position="fixed">
+            <a href="index.html" data-icon="back" data-rel="back" class="ui-btn-left">Cancel</a>
+            <h1>Register</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <div data-role="fieldcontain">
+                <label for="regusername">Username</label>
+                <input type="text" id="regusername" placeholder="enter a username">
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="regpassword">Password</label>
+                <input type="password" id="regpassword" placeholder="enter a password">
+            </div>
+
+            <div data-role="fieldcontain">
+
+                <fieldset data-role="controlgroup">
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender">       
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </fieldset>
+
+            </div>
+
+            
+            <div data-role="fieldcontain">
+       
+                    <fieldset data-role="controlgroup" >
+                        <legend>Interested In</legend>
+                        <input type="checkbox" id="business" name="interest">       
+                        <label for="business">Business</label>
+                        
+                        <input type="checkbox" id="arts" name="interest">
+                        <label for="arts">Arts</label>
+
+                        <input type="checkbox" id="travel" name="interest">
+                        <label for="travel">Travel</label>
+
+                        <input type="checkbox" id="others" name="interest">
+                        <label for="others">Others</label>
+                    </fieldset>
+   
+            </div>
+
+            <div data-role="fieldcontain">
+                <label></label>
+                <a href="javascript:registerUser()"  data-role="button">Register</a>
+            </div>
+          
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1 style="font-size: .6rem;">Copyright <span>&#169;</span> 2020 <span  style="color:pink;font-family: 'Anton'; font-size: .7rem; letter-spacing: 3px;">-VEYS</span></h1>
+
+
+        </div>
+    
+    </div>
+    
+</body>
+</html>

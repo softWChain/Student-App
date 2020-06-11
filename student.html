@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../programming-4/JS/app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div data-role ="page" id="student_screen" >
+        <div data-role="header" data-position="fixed" data-theme="k">
+            <a href="#panel" data-theme="b" data-icon="gear" class="ui-btn-left">Settings</a>
+            <h1 >Students</h1>
+            <a href="javascript:adddEditDeleteStudent(-1)" data-theme="b" data-icon="plus" class="ui-btn-right">Add</a>
+        </div>
+        <div data-role="main" class="ui-content">
+
+            <ul id="student_list" data-role="listview" data-inset="true">
+
+            </ul>
+          
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1 style="font-size: .6rem;">Copyright <span>&#169;</span> 2020 <span  style="color:pink;font-family: 'Anton'; font-size: .7rem; letter-spacing: 3px;">-VEYS</span></h1>
+
+            
+         </div>
+         <div data-role="panel" data-theme="b" data-position="left" id="panel">
+             <div data-role="main" class="ui-content">
+                <ul data-role="listview" >
+                    <li><a href="#down-about" id="content-id">About</a></li>
+                    <li><a onclick="logout()" href="#">Logout</a></li>
+                </ul>
+                
+             </div>
+         </div>
+
+         <div data-role="panel" data-theme="b" data-position="right" id="down-about">
+            <div data-role="main" class="ui-content">
+                <label style="margin-bottom: 20px; text-align: center;
+                font-family: 'Bungee','Metal Mania',cursive;
+                letter-spacing: 2px; font-size: .8rem;" for="category">Category</label>
+                <ul id="category" data-role="listview" >
+                     <li><a href="">JS</a></li>
+                    <li><a href="">CSharp</a></li>
+                    <li><a href="">Pyhton</a></li>
+                    <li><a href="">Java</a></li>
+                    <li style="font-size: 1rem; 
+                    font-family: 'Bungee','Metal Mania' ,cursive; 
+                    position: absolute; bottom: 0; 
+                    position: fixed; width: 100%; 
+                    border-top:.5px solid white; 
+                    color:pink; letter-spacing: 4.1px;">created By-Veys</li>
+                    
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

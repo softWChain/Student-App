@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!--    
+    <link rel="stylesheet" href="../programming-4/JS/app.js">
+    <link rel="stylesheet" href="../programming-4/JS/jquery.min.3.5.1.js">
+    <link rel="stylesheet" href="../programming-4/JS/jquery.mobile-1.4.5.min.js"> -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Metal+Mania&display=swap" rel="stylesheet">
+    
+    <script src="../programming-4/JS/app.js"></script>
+
+    <title>VEYS1</title>
+</head>
+<body>
+    <div data-role ="page" id="login_screen" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>Login</h1>
+            <a href="register.html" data-icon="grid" class="ui-btn-right">Register</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div data-role="fieldcontain">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="enter username">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="enter password">
+            </div>
+            <div data-role="fieldcontain">
+                <label></label>
+                <a href="javascript:checkLogin()" data-role="button">Login</a>
+            </div>
+          
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+            <h1 style="font-size: .6rem;">Copyright <span>&#169;</span> 2020 <span  style="color:pink;font-family: 'Anton'; font-size: .7rem; letter-spacing: 3px;">-VEYS</span></h1>
+        </div>
+
+        <div data-role="popup" id="pwdalert">
+            <div data-role="header" >
+                <h1>Wrong</h1>
+                <a href="#" data-icon="delete" data-rel="back" data-iconpos="notext"></a>
+            </div>
+            <div data-role="main" class="ui-content">Username/Password is Wrong</div>
+        </div>
+
+        <div data-role="popup" id="re-register">
+            <div data-role="header" >
+                <h1>Wrong</h1>
+                <a href="#" data-icon="delete" data-rel="back" data-iconpos="notext"></a>
+            </div>
+            <div data-role="main" class="ui-content">Please firstly register</div>
+        </div>
+    </div>
+</body>
+</html>
